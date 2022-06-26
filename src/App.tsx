@@ -1,13 +1,14 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import Services from "./Pages/Services";
+import Login from "./Pages/Login";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="h-full bg-orange-500">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Service" element={<Services/>}/>
+        <Route path="/" element={<Login />} />
+        <Route path="/Home" element={<Home />} />
       </Routes>
     </div>
   );
